@@ -1,0 +1,84 @@
+.articles {
+  background-color: $veryLightGray;
+
+
+  h2 {
+    font-size: 26px;
+    color: $darkBlue;
+    text-align: center;
+  }
+}
+
+.article {
+
+  &__content {
+    padding: 70px 24px;
+    @include breakpoint-up(medium)
+    {
+      padding: 95px 160px;
+    }
+
+  }
+
+  &__gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+  }
+
+  &__item {
+    border-radius: 5px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    transition: all 150ms ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+
+    }
+
+
+  }
+
+  &__image {
+    height: 12.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+  &__textContents {
+    padding: 1.875rem;
+    padding-bottom: 2.5rem;
+    background-color: $white;
+    @include breakpoint-up(medium){
+      padding: 1.875rem 1.5625rem;
+      min-height: 178px;
+    }
+  }
+  &__author {
+    margin-bottom: 15px;
+    color:$grayishBlue;
+    font-size: $xsmall-mobile;
+
+
+  }
+  &__title {
+    font-size: $small-mobile;
+    color: $darkBlue;
+    margin-bottom: 15px;
+
+  }
+  &__description {
+    font-size: $small-mobile;
+    color:$grayishBlue;
+
+  }
+}

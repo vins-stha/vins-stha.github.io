@@ -1,0 +1,73 @@
+.features {
+  background-color: $lightGrayishBlue;
+  padding:70px 30px;
+  text-align: center;
+
+  @include breakpoint-up(large){
+    text-align: left;
+    padding: 110px 160px;
+  }
+
+
+
+  @include breakpoint-down(small) {
+    h2 {
+      font-size: $mediumLarge-mobile;
+    }
+    padding-bottom: 70px;
+  }
+
+  p {
+    font-size: $medium;
+    color: $grayishBlue;
+  }
+
+  &__contents {
+    @include breakpoint-up(large){
+      display: flex;
+    }
+    @include breakpoint-up(medium){
+      display: flex;
+      flex-wrap: wrap;
+     // margin-left: 100px;
+    }
+  }
+
+  &__item {
+    padding: 0.9375rem;// 15px;
+    @include breakpoint-up(large){
+     flex:1;
+    }
+    @include breakpoint-up(medium){
+     flex:1 0 50%;
+    }
+  }
+
+  &__icon,  &__title {
+    margin-bottom: 1.875rem; //30px
+    @include breakpoint-up(large)
+    {
+      margin-bottom: 2.5rem; //40px
+    }
+
+ }
+
+  &__title {
+    font-size: $medium;
+  }
+
+  &__description{
+    font-size: $xsmall;
+    color: $grayishBlue;
+    line-height: 1rem;
+  }
+
+}
+
+.subText {
+
+  text-align: left;
+  @include breakpoint-up(medium) {
+    width: 650px;
+  }
+}

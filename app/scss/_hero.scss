@@ -1,0 +1,63 @@
+.hero {
+  text-align: center;
+  margin-bottom: 2.1875rem;//35px;
+
+  @include breakpoint-up(large)
+  {
+    display: flex;
+    align-items: center;
+
+
+  }
+
+  &__image {
+    position: relative;
+    background-image: url("../images/bg-intro-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17.5rem;//280px;
+
+    @include breakpoint-up(large) {
+      flex: 1; //make all flex contents of same size irrespective of contents
+      order: 2;
+      min-height: 41rem;
+      background-image: url("../images/bg-intro-desktop.svg");
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/image-mockups.png");
+      background-size: 96%;
+      min-height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      transform:translateX(-41%);
+    }
+  }
+
+  &__textContents {
+    @include breakpoint-up(large) {
+      flex: 1; //make all flex contents of same size irrespective of contents
+      order: 1;
+
+    }
+    h1 {
+      font-weight: 300;
+      font-size: 2.31rem;
+      color: $darkBlue;
+      width: 23.75rem; //380px
+      text-align: left;
+    }
+
+    p {
+      color: $grayishBlue;
+      text-align: justify;
+      font-size: 0.85rem; //15px
+      padding: 0;
+    }
+
+  }
+}
