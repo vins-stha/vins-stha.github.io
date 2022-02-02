@@ -1,0 +1,29 @@
+.projects {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: $background;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    .project {
+        border: 1px solid $white;
+        padding: 1rem;
+        &__title {
+            font-size: 2rem;
+            text-align: center;
+        }
+        &__image {
+            padding: 1rem;
+            text-align: center;
+            img {
+                object-fit: contain;
+                width: 90%;
+            }
+        }
+        &__detail {
+            font-size: 1.2rem;
+            color: $color;
+        }
+    }
+}

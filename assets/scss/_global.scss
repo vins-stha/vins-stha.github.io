@@ -1,0 +1,31 @@
+$background: #151617;
+$limeGreen: hsl(136, 65%, 51%);
+$brightCyan: hsl(192, 70%, 51%);
+$color: darkorange;
+$aqua: aqua;
+$white: #FFFFFF;
+$black: #000000;
+html,
+body {
+    width: 90%;
+    background-color: $black;
+    color: $color;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-title {
+    margin-left: 5%;
+    font-size: 3rem;
+}

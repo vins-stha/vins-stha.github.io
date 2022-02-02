@@ -1,0 +1,9 @@
+# Default ignored files
+/workspace.xml
+*.pdf
+*FI*.png
+../assets/img/CV.pdf
+../assets/img/PROFIL.PNG
+../jsfiddle
+../assets/scss/_home*.scss
+

@@ -1,0 +1,87 @@
+.about {
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem;
+  align-content: space-between;
+  background-color: $background;
+  border-radius: 5px;
+
+  &__image {
+    width: 32%;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      border-radius: 5px;
+      object-fit: contain;
+      width: 80%;
+    }
+  }
+
+  &__texts {
+    flex: 1;
+    order: 1;
+    padding: 1rem;
+    line-height: 2.7rem;
+    font-size: 1.5rem;
+  }
+
+  &__tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+  }
+
+  .tech-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: grey;
+    width: 25%;
+
+    li {
+      list-style: circle;
+      font-size: 1rem;
+      color: orange;
+    }
+  }
+
+  .sub-title {
+    border: 1px solid white;
+    margin-top: -2rem;
+  }
+
+  .img-texts {
+    color: white;
+    line-height: 0.3rem;
+  }
+
+  .img-bio {
+    font-size: 1.5rem;
+    margin-right: 20%;
+    line-height: 0.75rem;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 2.31rem;
+    color: darkorange;
+    width: 23.75rem; //380px
+    text-align: left;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
